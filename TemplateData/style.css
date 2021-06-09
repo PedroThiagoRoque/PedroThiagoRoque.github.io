@@ -18,8 +18,8 @@
 .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
 .webgl-content .footer
 
-body {
-	background: linear-gradient(#fff, #c6dafd);
+.body {
+	background: linear-gradient(#ffffff 10%, #c6dafd 70%);
 	overflow-x: hidden !important;
 	height:100%;
 	width: 100%;
