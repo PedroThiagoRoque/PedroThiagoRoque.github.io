@@ -19,7 +19,7 @@
 .webgl-content .footer
 
 body {
-	background linear-gradient(#fff, #c6dafd);
+	background: linear-gradient(#fff, #c6dafd);
 	overflow-x: hidden !important;
 	height:100%;
 	width: 100%;
