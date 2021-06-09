@@ -19,18 +19,17 @@
 .webgl-content .footer
 
 body {
+	overflow-x: hidden !important;
 	height:100%;
 	width: 100%;
 }
 
 .logo2 {width: 100%; height:25%; margin-left: 10%;}
-.patrocinadores{position: absolute; background-color: #8CC1EB; width: 100%; height: 400px; top: 1100px; left: 0%;}
 
-/* On screens that are 600px or less, set the background color to olive */
+.patrocinadores{position: absolute; background-color: #8CC1EB; width: 100%; height: 600px; top: 1100px; left: 0%;}
+
+
 @media screen and (max-width: 600px) {
-	.webgl-content {position: absolute; top: 20%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
-  	.patrocinadores{position: absolute; background-color: #8CC1EB; width: 100%; height: 400px; top: 1100px; left: 0%;}
-  body {
-    
-  }
+    .webgl-content {position: absolute; top: 20%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+      .patrocinadores{position: absolute; background-color: #8CC1EB; width: 100%; height: 400px; top: 1100px; left: 0%;}
 }
