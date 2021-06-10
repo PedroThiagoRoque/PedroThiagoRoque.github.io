@@ -32,6 +32,11 @@ body{
  .wrapper {
    display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  	margin-bottom: 70px;
+}
+.wrapper2 {
+   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .caixalogo{ 
@@ -56,9 +61,10 @@ width:100px;
     top:50%;
     left:50%;
     margin-top:10px;
-    margin-left:30px;}
+    margin-left:30px;
+}
 
-    .caixalogocnpq{ 
+.caixalogocnpq{ 
 	width:100px;
     height:100px;
     top:50%;
@@ -66,7 +72,25 @@ width:100px;
     margin-top:25px;
     margin-left:-40px;}
 
-    .text{
+    .caixalogonaurb{ 
+width:100px;
+    height:100px;
+    top:50%;
+    left:50%;
+    margin-top:25px;
+    margin-left:10px;
+}
+
+.caixalogogegradi{ 
+width:100px;
+    height:100px;
+    top:50%;
+    left:70%;
+    margin-top:15px;
+    margin-left:50px;
+}
+
+.text{
     	margin-left:20px;
     	left:25%;
     	font-family: 'Roboto', sans-serif;
