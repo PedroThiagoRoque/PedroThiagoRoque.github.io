@@ -32,6 +32,10 @@ body{
    display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+ .wrapper .caixalogo{ 
+height: 200px; 
+align-content: center;
+border: 3px solid #000;}
 
 @media screen and (max-width: 600px) {
     .webgl-content {position: absolute; top: 20%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
