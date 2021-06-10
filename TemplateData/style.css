@@ -28,7 +28,17 @@ body{
 
 .logo2 {width: 100%; height:25%; margin-left: 10%;}
 
-.patrocinadores{position: absolute; background-color: #8CC1EB; width: 100%; height: 600px; top: 1100px; left: 0%; justify-content: space-between;}
+.patrocinadores{
+
+	position: absolute; background-color: #8CC1EB; 
+	background: linear-gradient(#887dd7,#574D99);
+	width: 100%; height: 600px; top: 1100px; left: 0%; 
+	justify-content: space-between; 
+   -moz-box-shadow:    inset 0 0 13px #1a1351;
+   -webkit-box-shadow: inset 0 0 13px #1a1351;
+   box-shadow:         inset 0 0 13px #1a1351;
+
+}
  .wrapper {
    display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
