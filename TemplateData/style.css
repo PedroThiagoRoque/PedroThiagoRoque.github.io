@@ -2,13 +2,22 @@
 .webgl-content {display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;margin-left: 30px; margin-right: 30px; border: 3px solid black}
+  margin-top: 50px;margin-left: auto; margin-right: auto; border: 3px solid black}
 
 /*
 {position: absolute; margin-top: 30%; top: 50%; left: 50%;
  -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
 border: 3px solid black}
 */
+#gameContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    border: 3px solid red
+    width: 1024px; 
+    height: 768px; 
+    padding: 10%;}
+
 .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .webgl-content .logo {background: url('progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
 .webgl-content .progress {height: 18px; width: 141px; margin-top: 90px;}
