@@ -11,7 +11,7 @@
       margin: 0;
       padding: 0;
       height: 100vh;
-      background-color: #0c0c0c;
+      background: url('bgEnergIA.jpg') center/cover no-repeat, #0c0c0c;
       font-family: 'Arial', sans-serif;
       display: flex;
       justify-content: center;
@@ -20,41 +20,13 @@
       color: white;
     }
 
-    /* Morphing Gradient Background */
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(135deg, #0c0c0c, rgba(0, 255, 0, 0.2), rgba(50, 255, 50, 0.4), rgba(0, 255, 0, 0.3), #0c0c0c);
-  background-size: 200% 200%;
-  animation: morphGradient 10s ease infinite;
-  z-index: -1;
-}
-
-/* Animação suave de movimento do gradiente */
-@keyframes morphGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-
     .container {
       position: relative;
       width: 80vw;
       height: 80vh;
       border: 2px solid white;
       border-radius: 20px;
-      background-color: rgba(255, 255, 255, 0.05); /* Fundo transparente */
+      background-color: rgba(255, 255, 255, 0); /* Fundo transparente */
       padding: 30px;
     }
 
@@ -112,7 +84,7 @@ body::before {
     
     <!-- Logo no canto superior esquerdo -->
     <div class="logo">
-      <h1><img src="images/EnergIA-App+Site.jpg" alt="Logo EnergIA" width="150"></h1>
+      <h1><img src="logo-EnergIA.png" alt="Logo EnergIA" width="170"></h1>
     </div>
 
     <!-- Texto inferior esquerdo -->
