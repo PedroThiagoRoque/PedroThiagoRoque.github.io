@@ -4,55 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EnergIA - Eficiência Energética</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     /* Estilos gerais */
     body {
       margin: 0;
       padding: 0;
-      height: 100vh;
+      min-height: 100vh;
       background: url('bgEnergIA.jpg') center/cover no-repeat, #0c0c0c;
       font-family: 'Arial', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
       color: white;
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .container {
+    .custom-container {
       position: relative;
-      width: 80vw;
-      height: 80vh;
+      width: 80%;
+      max-width: 1200px;
+      margin: auto;
       border: 2px solid white;
       border-radius: 20px;
       background-color: rgba(255, 255, 255, 0); /* Fundo transparente */
       padding: 30px;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     /* Estilo dos textos */
-    .logo {
-      position: absolute;
-      top: 30px;
-      left: 30px;
-    }
-
-    .bottom-left {
-      position: absolute;
-      bottom: 30px;
-      left: 30px;
-    }
-
-    .bottom-right {
-      position: absolute;
-      bottom: 30px;
-      right: 30px;
-    }
-
-    .buttons {
-      position: absolute;
-      top: 30px;
-      right: 30px;
+    .logo img {
+      width: 170px;
     }
 
     /* Estilo dos botões */
@@ -75,37 +59,112 @@
       border: none;
     }
 
+    /* Estilos para dispositivos móveis */
+    @media (max-width: 768px) {
+      body {
+        background: url('bgEnergIA.jpg') right/cover no-repeat, #0c0c0c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .custom-container {
+        padding: 20px;
+      }
+
+      /* Centralizar logo e botões */
+      .d-flex.justify-content-between.align-items-center {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo {
+        margin-bottom: 20px;
+      }
+
+      /* Ajustar tamanho da logo */
+      .logo img {
+        width: 150px;
+      }
+
+      /* Botões em bloco */
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .buttons .btn {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      /* Ajuste de fontes e espaçamentos */
+      .btn-login, .btn-register {
+        font-size: 1rem;
+        padding: 12px;
+      }
+
+      /* Centralizar textos inferiores */
+      .d-flex.justify-content-between.align-items-end {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .bottom-left, .bottom-right {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      /* Ajustar tamanhos de fonte */
+      .bottom-left h2 {
+        font-size: 1.5rem;
+      }
+
+      .bottom-left p,
+      .bottom-right p {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
 
   <!-- Seção principal -->
-  <div class="container">
-    
-    <!-- Logo no canto superior esquerdo -->
-    <div class="logo">
-      <h1><img src="logo-EnergIA.png" alt="Logo EnergIA" width="170"></h1>
+  <div class="custom-container">
+
+    <!-- Linha superior com logo e botões -->
+    <div class="d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="logo-EnergIA.png" alt="Logo EnergIA">
+      </div>
+      <!-- Botões -->
+      <div class="buttons">
+        <button class="btn btn-login">Log in</button>
+        <button class="btn btn-register">Registrar-se</button>
+      </div>
     </div>
 
-    <!-- Texto inferior esquerdo -->
-    <div class="bottom-left">
-      <h2>Economize energia com <strong>inteligência</strong></h2>
-      <p>Um agente conversacional para um campus sustentável e econômico</p>
-    </div>
+    <!-- Espaço central (pode ser utilizado para conteúdo adicional) -->
 
-    <!-- Texto inferior direito -->
-    <div class="bottom-right">
-      <p>LABCEE / UFPel / 2024</p>
-    </div>
-
-    <!-- Botões no canto superior direito -->
-    <div class="buttons">
-      <button class="btn-login">Log in</button>
-      <button class="btn-register">Registrar-se</button>
+    <!-- Linha inferior com textos -->
+    <div class="d-flex justify-content-between align-items-end">
+      <!-- Texto inferior esquerdo -->
+      <div class="bottom-left">
+        <h2>Economize energia com <strong>inteligência</strong></h2>
+        <p>Um agente conversacional para um campus sustentável e econômico</p>
+      </div>
+      <!-- Texto inferior direito -->
+      <div class="bottom-right">
+        <p>LABCEE / UFPel / 2024</p>
+      </div>
     </div>
 
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
