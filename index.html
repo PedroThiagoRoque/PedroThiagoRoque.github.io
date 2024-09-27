@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Pedro Thiago Roque</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: white;
+      color: black;
+    }
+    .project-title {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 1.5rem;
+      margin-top: 1rem;
+    }
+    .profile-section {
+      padding: 20px;
+      background-color: white;
+      border-right: 2px solid black;
+    }
+    .custom-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .custom-list li::before {
+      content: ">"; /* Substitui o bullet padrão por '>' */
+      color: black;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-right: 0.5em;
+    }    
+    .profile-section h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .project-card {
+      padding: 20px;
+      margin-bottom: 0;
+      border-bottom: 1px solid black;
+    }
+    .project-card img {
+      max-width: 100%;
+    }
+    .project-description {
+      font-size: 1rem;
+      color: black;
+    }
+    .arrow-icon {
+      font-size: 2rem;
+      float: right;
+      color: darkred;
+      text-decoration: none;
+    }
+    .arrow-icon:hover,
+    .arrow-icon:focus,
+    .arrow-icon:visited {
+      color: red;
+    }
+    .header {
+      background-color: white;
+      padding: 10px 20px;
+      border-bottom: 2px solid black;
+      display: flex;
+      align-items: center;
+    }
+    .header img {
+      width: 80px;
+      height: 80px;
+    }
+    .header nav {
+      margin-left: auto;
+    }
+    a
+    {
+      color: darkred;
+      text-decoration: none;
+    }
+    a:hover,a:focus,
+    a:visited {
+      color: darkred;
+    }
+    /* Centralizar imagens no mobile */
+    @media (max-width: 576px) {
+      .project-card .col-md-4 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header com logo e menu -->
+  <header class="header">
+    <img src="images/logoRoque.png" alt="Logo">
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Seção do perfil -->
+      <div class="col-md-3 profile-section">
+        <div class="profile-image text-center">
+          <img src="images/perfil.jpg" alt="Foto do perfil" class="img-fluid rounded-circle mb-3">
+        </div>
+
+        <h1>Pedro Thiago Roque</h1>
+        <p><strong>AKA:</strong> PunkRoque, Roque</p>
+        <ul class="custom-list">
+          <li>Programa de Pós Graduação em Computação - UFPel</li>
+          <li>Ciência da Computação - UFPel</li>
+          <li>Técnico em Informática - URCAMP</li>
+          <li>Pesquisador no GEGRADI - UFPel</li>
+          <li>Dev na Carbona Desenvolvimento de software</li>
+        </ul>
+
+        <a href="https://lattes.cnpq.br/7245082429045466" target="_blank">Lattes</a>
+        <br>
+        <a href="https://www.linkedin.com/in/pedro-thiago-roque/" target="_blank">LinkedIn</a>
+
+      </div>
+
+      <!-- Seção dos projetos -->
+      <div class="col-md-9">
+        <div class="project-title">Projetos</div>
+
+        <div class="row">
+          <!-- Projeto 001 -->
+          <div class="col-md-12 project-card">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="images/ilemi.jpg" alt="Imagem do Projeto 001" class="img-fluid text-center">
+              </div>
+              <div class="col-md-8">
+                <h3>ILÊMI - Plantas Procedurais 
+                  <a href="https://github.com/PedroThiagoRoque/ILEMI-WFC-Arquitetura" target="_blank" class="arrow-icon">↗</a>
+                </h3>
+                <p class="project-description">O projeto ILÊMI adapta o algoritmo Wave Function Collapse (WFC), originalmente utilizado em design de jogos, para a geração procedural de espaços arquitetônicos. Através de uma interface simplificada e regras de adjacência, o sistema permite que usuários criem cenários residenciais personalizados, sem necessidade de conhecimento em programação. ILÊMI automatiza a disposição de elementos como paredes, portas e janelas, proporcionando uma abordagem inovadora e eficiente na modelagem arquitetônica, inspirada em técnicas de geração procedural da indústria de games.</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Projeto 002 -->
+          <div class="col-md-12 project-card">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="images/placeholder" alt="Imagem do Projeto 002" class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <h3>ScanXML to Revit Geometry
+                  <a href="https://github.com/seu-usuario/projeto-002" target="_blank" class="arrow-icon">↗</a>
+                </h3>
+                <p class="project-description">Este projeto utiliza Dynamo e Python para converter representações de scan 3D em geometria nativa do Revit. A ferramenta lê arquivos XML com descrições detalhadas de paredes, portas e janelas, e constrói automaticamente essas estruturas no Revit. Funcionalidades incluem leitura de arquivo XML, configuração de tipos de parede e níveis, geração automática de paredes e posicionamento de aberturas (portas e janelas). A solução automatiza o processo de conversão de dados de scans 3D em modelos BIM, facilitando a criação de projetos arquitetônicos no Revit.</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Projeto 003 -->
+          <div class="col-md-12 project-card">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="images/energia.png" alt="Imagem do Projeto 003" class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <h3>EnergIA - Eficiência Energética
+                <a href="energia/energia.html" target="_blank" class="arrow-icon">↗</a>
+                </h3>
+                <p class="project-description">EnergIA é uma plataforma para testar chatbots que fornecem informações sobre eficiência energética e monitoram o progresso em projetos de gamificação de economia de energia em prédios públicos. Utilizando modelos GPT-4 da OpenAI e Claude-3.5 Sonnet da Anthropic, os chatbots oferecem respostas inteligentes e contextualizadas, além de interagir com os usuários. A plataforma permite a personalização de parâmetros de sistema, seleção de personalidades dos chatbots, integração com bancos de dados de usuários e consumo energético, e acompanha tarefas de gamificação para incentivar economia de energia.</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Projeto 004 -->
+          <div class="col-md-12 project-card">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="images/pat2math-300.png" alt="Imagem do Projeto 004" class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <h3>PAT2MATH v2 
+                  <a href="https://github.com/seu-usuario/projeto-004" target="_blank" class="arrow-icon">↗</a>
+                </h3>
+                <p class="project-description">O sistema de autoria para a nova versão do PAT2MATH visa melhorar o processo de criação de conteúdo para o tutor inteligente voltado para o ensino de matemática. Esse sistema permitirá que educadores configurem, personalizem e adicionem novos exercícios, tópicos e desafios ao tutor, de forma dinâmica e intuitiva. O objetivo é facilitar o desenvolvimento de novos módulos de ensino, mantendo a adaptabilidade e a interatividade que são marcas do sistema, proporcionando uma experiência de aprendizado personalizada para os alunos.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
