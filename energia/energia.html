@@ -4,19 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EnergIA - Eficiência Energética</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <style>
     /* Estilos gerais */
     body {
       margin: 0;
       padding: 0;
       min-height: 100vh;
-      background: url('bgEnergIA.jpg') center/cover no-repeat, #0c0c0c;
+      background-color: #0C0C0C;
       font-family: 'Arial', sans-serif;
-      color: white;
+      color: #EFECE4; /* Cor do texto */
+      font-family: "Open Sans", sans-serif;
+    }
+
+     /* Hero Section */
+     .hero-section {
+      background: url('bgEnergIA.jpg') center/cover no-repeat, #0c0c0c;
       display: flex;
-        flex-direction: column;
-        justify-content: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      border-radius: 20px; /* Ajuste o valor conforme necessário para arredondar os cantos */
     }
 
     .custom-container {
@@ -32,15 +45,12 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      color: white;
+      
     }
 
-    /* Estilo dos textos */
-    .logo img {
-      width: 170px;
-    }
-
-    /* Estilo dos botões */
-    .btn-login, .btn-register {
+      /* Estilo dos botões */
+      .btn-login, .btn-register {
       padding: 10px 20px;
       font-size: 1.1rem;
       border-radius: 20px;
@@ -59,13 +69,106 @@
       border: none;
     }
 
+    /* Estilos para info-section */
+    .info-section {
+      padding: 60px 0;
+    }
+
+    .info-section .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .info-section .content {
+      max-width: 50%;
+      padding: 20px;
+    }
+
+    .info-section .content h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .info-section .content p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #EFECE4;
+    }
+
+    .info-section .content .stats {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    .info-section .content .stat-number {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .info-section .content .stat-label {
+      font-size: 1rem;
+      color: #EFECE4;
+    }
+
+    .info-section .content .btn {
+      padding: 12px 24px;
+      font-size: 1rem;
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .info-section .content .btn:hover {
+      background: #EFECE4;
+      color: #0c0c0c;
+    }
+
+    .info-section .image-container {
+      max-width: 40%;
+      padding: 20px;
+    }
+
+    .info-section .image-container img {
+      width: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .info-section .container {
+        flex-direction: column;
+      }
+
+      .info-section .content, .info-section .image-container {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .info-section .content h2 {
+        font-size: 2rem;
+      }
+
+      .info-section .content .stats {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
     /* Estilos para dispositivos móveis */
     @media (max-width: 768px) {
-      body {
+      .hero-section {
         background: url('bgEnergIA.jpg') right/cover no-repeat, #0c0c0c;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
       }
 
       .custom-container {
@@ -128,42 +231,207 @@
         font-size: 1rem;
       }
     }
+
+    /* Estilo para o card de desafios */
+.card-desafios {
+  background-color: #1a1a1a; /* Cinza mais claro que o fundo */
+  border-radius: 15px; /* Bordas arredondadas */
+  padding: 40px; /* Espaçamento interno */
+  max-width: 900px; /* Largura máxima */
+  margin: 20px auto; /* Centraliza horizontalmente */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombra suave */
+  border: 1px solid #333; /* Bordas levemente destacadas */
+}
+
+/* Estilo para o texto de introdução */
+.card-intro {
+  font-size: 1rem;
+  color: #bfbfbf; /* Cor de destaque */
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Estilo para o título do card */
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff; /* Cor do texto principal */
+  margin-bottom: 10px;
+}
+
+/* Estilo para o texto do card */
+.card-text {
+  font-size: 1.1rem;
+  color: #d3d3d3; /* Cinza claro para o texto */
+  line-height: 1.6;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .card-desafios {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
   </style>
 </head>
 <body>
 
-  <!-- Seção principal -->
-  <div class="custom-container">
-
-    <!-- Linha superior com logo e botões -->
-    <div class="d-flex justify-content-between align-items-center">
-      <!-- Logo -->
-      <div class="logo">
-        <img src="logo-EnergIA.png" alt="Logo EnergIA">
+   <!-- Hero Section -->
+   <section class="hero-section">
+    <div class="custom-container">
+      <!-- Linha superior com logo e botões -->
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="logo-EnergIA.png" alt="Logo EnergIA">
+        </div>
+        <!-- Botões -->
+        <div class="buttons">
+          <button class="btn btn-login">Log in</button>
+          <button class="btn btn-register">Registrar-se</button>
+        </div>
       </div>
-      <!-- Botões -->
-      <div class="buttons">
-        <button class="btn btn-login">Log in</button>
-        <button class="btn btn-register">Registrar-se</button>
+
+      <!-- Linha inferior com textos -->
+      <div class="d-flex justify-content-between align-items-end">
+        <!-- Texto inferior esquerdo -->
+        <div class="bottom-left">
+          <h2>Economize energia com <strong>inteligência</strong></h2>
+          <p>Um agente conversacional para um campus sustentável e econômico</p>
+        </div>
+        <!-- Texto inferior direito -->
+        <div class="bottom-right">
+          <p>LABCEE / UFPel / 2024</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Seção de Informações Chatbot EnergIA -->
+<section class="info-section">
+  <div class="container">
+    <!-- Card de Desafios -->
+    <div class="card-desafios p-4 text-center text-md-start mx-auto d-flex flex-column flex-md-row align-items-center">
+      <!-- Conteúdo de texto -->
+      <div class="card-text-content flex-grow-1">
+        <!-- Título pequeno acima -->
+        <p class="card-intro mb-3 text-uppercase">Chatbot EnergIA</p>
+        <!-- Texto principal em destaque -->
+        <h3 class="card-title mb-4 text-left">
+          Uma abordagem inovadora para economia de energia
+        </h3>
+        <!-- Texto descritivo -->
+        <p class="card-text mb-4 text-left">
+          EnergIA é um chatbot projetado para educar e engajar usuários de edificações universitárias em práticas de eficiência energética. Ele interage por meio de uma interface amigável, promovendo a conscientização e participação em desafios gamificados, usando dados reais de consumo. Fácil de expandir para outros prédios monitorados, o EnergIA facilita mudanças comportamentais sustentáveis de forma escalável e eficiente.
+        </p>
+      </div>
+      <!-- Imagem dentro do card -->
+      <div class="card-image ms-md-4 mt-4 mt-md-0 d-flex align-items-center ">
+        <img src="EnergIA-fisico.png" alt="Desafios" class="rounded img-fluid" style="max-width: 200px;">
       </div>
     </div>
-
-    <!-- Espaço central (pode ser utilizado para conteúdo adicional) -->
-
-    <!-- Linha inferior com textos -->
-    <div class="d-flex justify-content-between align-items-end">
-      <!-- Texto inferior esquerdo -->
-      <div class="bottom-left">
-        <h2>Economize energia com <strong>inteligência</strong></h2>
-        <p>Um agente conversacional para um campus sustentável e econômico</p>
-      </div>
-      <!-- Texto inferior direito -->
-      <div class="bottom-right">
-        <p>LABCEE / UFPel / 2024</p>
-      </div>
-    </div>
-
   </div>
+</section>
+
+<!-- Seções de Informações -->
+<section class="info-section">
+  <div class="container">
+    <!-- Card de Desafios -->
+    <div class="card-desafios p-4 text-center mx-auto">
+      <!-- Título pequeno acima -->
+      <p class="card-intro mb-3 text-uppercase">Desafios</p>
+      <!-- Texto principal em destaque -->
+      <h3 class="card-title mb-4">
+        Os principais desafios de implementar eficiência energética de forma inteligente
+      </h3>
+      <!-- Texto descritivo -->
+      <p class="card-text mb-4 ">
+        É necessário alinhar o conforto dos usuários com o uso eficiente de energia, superar os custos de automação, e promover a conscientização e engajamento para mudanças de comportamento. A subjetividade na percepção de conforto e a necessidade de estratégias eficazes de incentivo, como gamificação e chatbots, são barreiras críticas a serem enfrentadas.
+      </p>
+    </div>
+  </div>
+</section>
+
+  
+
+  <section class="info-section">
+    <div class="container">
+      <div class="content">
+        <h2>A origem do Projeto</h2>
+        <p class="text-justify">O chatbot EnergIA está inserido no projeto "Validação de sistema de gamificação, gestão e automação na nuvem para eficiência energética de edificações públicas com foco inicial em universidades" do LABCEE - UFPel, que tem como objetivo otimizar o consumo energético de edificações públicas, especialmente universidades, utilizando sistemas inovadores de automação, práticas gamificadas e chatbots para conscientizar e incentivar mudanças comportamentais nos usuários. A solução integra o monitoramento de energia, temperatura, presença e luminosidade, controlando iluminação e climatização para aumentar a eficiência energética. As práticas gamificadas, aliadas ao uso de chatbots, têm o papel de educar os usuários sobre hábitos sustentáveis e promover seu engajamento, tornando o uso dos espaços mais consciente e eficiente. O projeto propõe uma abordagem integrada de gestão de recursos para redução do consumo energético, melhoria do conforto e promoção da sustentabilidade ambiental.</p>
+        <div class="stats">
+          <div>
+            <div class="stat-number">4</div>
+            <div class="stat-label">Equipes Envolvidas</div>
+          </div>
+          <div>
+            <div class="stat-number">2 Anos</div>
+            <div class="stat-label">Tempo de Execução</div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="image-container">
+        <img src="../images/bloco2CA.jpg"  width="300px" height="300px" alt="O Projeto">
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="container">
+      <div class="content">
+        <h2>Tecnologia</h2>
+        <p>Descrição das tecnologias utilizadas para alcançar eficiência energética...</p>
+        <div class="stats">
+          <div>
+            <div class="stat-number">15</div>
+            <div class="stat-label">Ferramentas Tecnológicas</div>
+          </div>
+          <div>
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Automação Inteligente</div>
+          </div>
+        </div>
+        <a href="#" class="btn">Tecnologias</a>
+      </div>
+      <div class="image-container">
+        <img src="../images/placeholder" alt="Tecnologia">
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="container">
+      <div class="content">
+        <h2>Resultados Esperados</h2>
+        <p>Os resultados esperados após a implementação das soluções de eficiência energética...</p>
+        <div class="stats">
+          <div>
+            <div class="stat-number">80%</div>
+            <div class="stat-label">Redução de Consumo</div>
+          </div>
+          <div>
+            <div class="stat-number">30%</div>
+            <div class="stat-label">Economia Financeira</div>
+          </div>
+        </div>
+        <a href="#" class="btn">Veja os Resultados</a>
+      </div>
+      <div class="image-container">
+        <img src="../images/placeholder" alt="Resultados Esperados">
+      </div>
+    </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
