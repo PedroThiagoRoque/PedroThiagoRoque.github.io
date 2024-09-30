@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <style>
     /* Estilos gerais */
     body {
@@ -281,6 +283,166 @@
   }
 }
 
+/* Seção de Tecnologia */
+.technology-section {
+  background-color: #0c0c0c; /* Fundo escuro */
+  color: #EFECE4; /* Texto claro */
+}
+
+/* Título da Seção */
+.text-highlight {
+  color: #bfbfbf; /* Cor de destaque */
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Estilo dos Cards */
+.tech-card {
+  background-color: #1a1a1a; /* Fundo do card */
+  border-radius: 15px; /* Cantos arredondados */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left; /* Texto alinhado à esquerda */
+  padding-top: 60px; /* Espaçamento superior para o ícone */
+}
+
+.tech-card:hover {
+  transform: translateY(-5px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombra mais destacada */
+}
+
+/* Estilo do Ícone com Font Awesome */
+.tech-icon {
+  top: 20px;
+  left: 20px;
+  background: #119f04; /* Fundo verde */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icon i {
+  color: #fff; /* Cor do ícone */
+  font-size: 1.5rem; /* Tamanho do ícone */
+}
+
+/* Estilo do Título e Texto */
+.tech-title {
+  color: #fff; /* Cor branca para o título */
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.tech-description {
+  color: #bfbfbf; /* Texto de descrição mais claro */
+  font-size: 1rem;
+  margin-top: auto; /* Alinha o texto no fundo */
+}
+
+/* Ajuste de responsividade */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .tech-title {
+    font-size: 1.1rem;
+  }
+
+  .tech-description {
+    font-size: 0.9rem;
+  }
+}
+/* Estilo do Espaçador */
+.spacer {
+  height: 60px; /* Ajuste a altura conforme necessário */
+}
+
+/* Seção de Equipe */
+.team-section {
+  background-color: #0c0c0c; /* Fundo escuro */
+  color: #EFECE4; /* Texto claro */
+}
+
+/* Título da Seção */
+.text-highlight {
+  color: #bfbfbf; /* Cor de destaque */
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Estilo dos Cards da Equipe */
+.team-card {
+  background-color: #1a1a1a; /* Fundo do card */
+  border-radius: 15px; /* Cantos arredondados */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #EFECE4; /* Cor do texto */
+}
+
+.team-card:hover {
+  transform: translateY(-5px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Sombra mais destacada */
+}
+
+.team-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.team-role {
+  font-size: 0.9rem;
+  color: #bfbfbf; /* Cor para o subtítulo */
+}
+
+.team-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.team-date {
+  font-size: 0.85rem;
+  color: #bfbfbf; /* Data com cor mais clara */
+}
+
+/* Ajuste da imagem */
+.team-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Torna a imagem circular */
+}
+
+/* Ajuste de responsividade */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .team-name {
+    font-size: 1.1rem;
+  }
+
+  .team-description {
+    font-size: 0.9rem;
+  }
+}
+
+
   </style>
 </head>
 <body>
@@ -325,7 +487,7 @@
       <!-- Conteúdo de texto -->
       <div class="card-text-content flex-grow-1">
         <!-- Título pequeno acima -->
-        <p class="card-intro mb-3 text-uppercase">Chatbot EnergIA</p>
+        <p class="card-intro mb-3 text-uppercase text-left">Chatbot EnergIA</p>
         <!-- Texto principal em destaque -->
         <h3 class="card-title mb-4 text-left">
           Uma abordagem inovadora para economia de energia
@@ -363,75 +525,197 @@
 </section>
 
   
-
-  <section class="info-section">
-    <div class="container">
-      <div class="content">
-        <h2>A origem do Projeto</h2>
-        <p class="text-justify">O chatbot EnergIA está inserido no projeto "Validação de sistema de gamificação, gestão e automação na nuvem para eficiência energética de edificações públicas com foco inicial em universidades" do LABCEE - UFPel, que tem como objetivo otimizar o consumo energético de edificações públicas, especialmente universidades, utilizando sistemas inovadores de automação, práticas gamificadas e chatbots para conscientizar e incentivar mudanças comportamentais nos usuários. A solução integra o monitoramento de energia, temperatura, presença e luminosidade, controlando iluminação e climatização para aumentar a eficiência energética. As práticas gamificadas, aliadas ao uso de chatbots, têm o papel de educar os usuários sobre hábitos sustentáveis e promover seu engajamento, tornando o uso dos espaços mais consciente e eficiente. O projeto propõe uma abordagem integrada de gestão de recursos para redução do consumo energético, melhoria do conforto e promoção da sustentabilidade ambiental.</p>
-        <div class="stats">
-          <div>
-            <div class="stat-number">4</div>
-            <div class="stat-label">Equipes Envolvidas</div>
-          </div>
-          <div>
-            <div class="stat-number">2 Anos</div>
-            <div class="stat-label">Tempo de Execução</div>
-          </div>
-        </div>
-        
+<!-- Seção de Informações Chatbot EnergIA -->
+<section class="info-section">
+  <div class="container">
+    <!-- Card de Desafios -->
+    <div class="card-desafios p-4 text-center text-md-start mx-auto d-flex flex-column flex-md-row align-items-center">
+      <!-- Conteúdo de texto -->
+      <div class="card-text-content flex-grow-1">
+        <!-- Título pequeno acima -->
+        <p class="card-intro mb-3 text-uppercase text-left">Contexto</p>
+        <!-- Texto principal em destaque -->
+        <h3 class="card-title mb-4 text-left">
+          A origem do Projeto
+        </h3>
+        <!-- Texto descritivo -->
+        <p class="card-text mb-4 text-left mr-3">
+          O chatbot EnergIA está inserido no projeto "Validação de sistema de gamificação, gestão e automação na nuvem para eficiência energética de edificações públicas com foco inicial em universidades" do LABCEE - UFPel, que tem como objetivo otimizar o consumo energético de edificações públicas, especialmente universidades, utilizando sistemas inovadores de automação, práticas gamificadas e chatbots para conscientizar e incentivar mudanças comportamentais nos usuários. A solução integra o monitoramento de energia, temperatura, presença e luminosidade, controlando iluminação e climatização para aumentar a eficiência energética. 
+          <br>
+          As práticas gamificadas, aliadas ao uso de chatbots, têm o papel de educar os usuários sobre hábitos sustentáveis e promover seu engajamento, tornando o uso dos espaços mais consciente e eficiente. O projeto propõe uma abordagem integrada de gestão de recursos para redução do consumo energético, melhoria do conforto e promoção da sustentabilidade ambiental.
+        </p>
       </div>
-      <div class="image-container">
-        <img src="../images/bloco2CA.jpg"  width="300px" height="300px" alt="O Projeto">
-      </div>
-    </div>
-  </section>
-
-  <section class="info-section">
-    <div class="container">
-      <div class="content">
-        <h2>Tecnologia</h2>
-        <p>Descrição das tecnologias utilizadas para alcançar eficiência energética...</p>
-        <div class="stats">
-          <div>
-            <div class="stat-number">15</div>
-            <div class="stat-label">Ferramentas Tecnológicas</div>
-          </div>
-          <div>
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Automação Inteligente</div>
-          </div>
-        </div>
-        <a href="#" class="btn">Tecnologias</a>
-      </div>
-      <div class="image-container">
-        <img src="../images/placeholder" alt="Tecnologia">
+      <!-- Imagem dentro do card -->
+      <div class="card-image ms-md-4 mt-4 mt-md-0 d-flex align-items-center ">
+        <img src="../images/bloco2CA.jpg" alt="Bloco2ca" class="rounded img-fluid" style="max-width: 200px;">
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="info-section">
+<!-- Seção de Tecnologia -->
+<section class="technology-section py-5">
+  <div class="container">
+    <!-- Título da Seção -->
+    <div class="text-center mb-5">
+      <p class="text-uppercase text-highlight">Tecnologia</p>
+      <h2 class="section-title">
+        As principais tecnologias que tornam o EnergIA possível
+      </h2>
+    </div>
+
+    <!-- Cards de Tecnologias -->
+    <div class="row g-4">
+      <!-- Card de Tecnologia 1 -->
+      <div class="col-md-4">
+        <div class="tech-card p-4  position-relative mb-4"> 
+          <!-- Ícone no topo esquerdo usando Font Awesome -->
+          <div class="tech-icon position-absolute">
+            <i class="fas fa-brain"></i> <!-- Ícone substituído pelo Font Awesome -->
+          </div>
+          <!-- Elemento vazio para espaçamento -->
+          <div class="spacer"></div>
+          <!-- Conteúdo de texto -->
+          <h4 class="tech-title">Inteligência Artificial</h4>
+          <p class="tech-description text-justify">
+            O projeto utiliza o Claude 3.5 Sonnet, um LLM da Anthropic, para criar interações naturais e personalizadas sobre eficiência energética, integrando gamificação e dados em tempo real através de Retrieval Augmented Generation e Prompt Engineering.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card de Tecnologia 2 -->
+      <div class="col-md-4">
+        <div class="tech-card p-4 position-relative mb-4">
+          <!-- Ícone no topo esquerdo usando Font Awesome -->
+          <div class="tech-icon position-absolute">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <!-- Elemento vazio para espaçamento -->
+          <div class="spacer"></div>
+          <!-- Conteúdo de texto -->
+          <h4 class="tech-title">Dados de IoT e Sensores</h4>
+          <p class="tech-description text-justify">
+            O projeto integra dados de IoT e sensores para monitorar consumo de energia, temperatura e luminosidade em tempo real, fornecendo insights precisos para otimizar a eficiência energética e melhorar a interação dos usuários com o ambiente.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card de Tecnologia 3 -->
+      <div class="col-md-4">
+        <div class="tech-card p-4 position-relative mb-4">
+          <!-- Ícone no topo esquerdo usando Font Awesome -->
+          <div class="tech-icon position-absolute">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <!-- Elemento vazio para espaçamento -->
+          <div class="spacer"></div>
+          <!-- Conteúdo de texto -->
+          <h4 class="tech-title">Interatividade Multiplataforma</h4>
+          <p class="tech-description text-justify">
+            O projeto desenvolve app e site com Node.js e React para fornecer interfaces intuitivas, permitindo monitoramento em tempo real, controle de consumo energético e participação em atividades gamificadas, facilitando a interação e engajamento dos usuários.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="info-section">
     <div class="container">
       <div class="content">
         <h2>Resultados Esperados</h2>
-        <p>Os resultados esperados após a implementação das soluções de eficiência energética...</p>
-        <div class="stats">
-          <div>
-            <div class="stat-number">80%</div>
-            <div class="stat-label">Redução de Consumo</div>
-          </div>
-          <div>
-            <div class="stat-number">30%</div>
-            <div class="stat-label">Economia Financeira</div>
-          </div>
-        </div>
-        <a href="#" class="btn">Veja os Resultados</a>
+        <p>Espera-se criar um agente conversacional replicável que ofereça orientações sobre eficiência energética, promovendo mudanças positivas nos hábitos dos usuários e comportamentos sustentáveis. O agente gerará recomendações personalizadas com base em dados reais de consumo, adaptando-se a diferentes perfis de usuários. Além disso, serão produzidos relatórios e artigos que documentem o impacto educativo do agente, evidenciando sua capacidade de engajamento e influência no comportamento por meio de interações oportunas e gamificação.</p>
+        
       </div>
       <div class="image-container">
-        <img src="../images/placeholder" alt="Resultados Esperados">
+        <img src="chat.png" alt="Resultados Esperados">
       </div>
     </div>
   </section>
+
+  <!-- Seção de Equipe do Projeto -->
+<section class="team-section py-5">
+  <div class="container">
+    <!-- Título da Seção -->
+    <div class="text-center mb-5">
+      <p class="text-uppercase text-highlight">Equipe do Projeto</p>
+      <h2 class="section-title">Conheça a equipe do EnergIA</h2>
+    </div>
+
+    <!-- Grid de Cards da Equipe -->
+    <div class="row">
+      <!-- Card do Autor (maior card) -->
+      <div class="col-md-12 mb-4">
+        <div class="team-card p-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="../images/placeholder" alt="Autor" class="rounded-circle mr-3" style="width: 60px; height: 60px;">
+            <div>
+              <h5 class="team-name">Pedro Thiago Roque</h5>
+              <p class="team-role">Autor do Projeto</p>
+            </div>
+          </div>
+          <p class="team-description text-justify">
+            Pedro Thiago Roque é mestrando pelo Programa de Pós-Graduação em Computação pela Universidade Federal de Pelotas. Com experiência em desenvolvimento de software, pesquisa acadêmica e extensão em Ciência da Computação (UFPel). Atuação profissional em desenvolvimento de jogos, aplicações para geometria BIM, computação gráfica, e tecnologias de suporte para pesquisa em Arquitetura e Urbanismo.
+          </p>
+          
+        </div>
+      </div>
+
+      <!-- Card do Orientador 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="team-card p-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="../images/placeholder" alt="Orientador 1" class="rounded-circle mr-3" style="width: 60px; height: 60px;">
+            <div>
+              <h5 class="team-name">Profª Drª Patrícia Jaques Maillard</h5>
+              <p class="team-role">Orientadora</p>
+            </div>
+          </div>
+          <p class="team-description">
+            Atua em Inteligência Artificial aplicada à Educação, Informática Educativa e Computação Afetiva. Sua pesquisa foca no uso de IA para aprimorar processos educacionais e na análise de emoções em ambientes de aprendizagem para melhorar a interação estudante-sistema.
+          </p>
+          
+        </div>
+      </div>
+
+      <!-- Card do Orientador 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="team-card p-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="../images/placeholder" alt="Orientador 2" class="rounded-circle mr-3" style="width: 60px; height: 60px;">
+            <div>
+              <h5 class="team-name">Profª Drª Tatiana Aires Tavares</h5>
+              <p class="team-role">Co-orientadora</p>
+            </div>
+          </div>
+          <p class="team-description">
+            Atua em Interação Humano-Computador, acessibilidade e interfaces não convencionais. Sua pesquisa foca principalmente em métodos de avaliação, interfaces para múltiplos dispositivos e desenvolvimento de soluções acessíveis para melhorar a interação entre usuários e sistemas.
+          </p>
+          
+        </div>
+      </div>
+
+      <!-- Card do Orientador 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="team-card p-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="../images/placeholder" alt="Orientador 3" class="rounded-circle mr-3" style="width: 60px; height: 60px;">
+            <div>
+              <h5 class="team-name">Prof. Dr. Antônio César Silveira Baptista da Silva</h5>
+              <p class="team-role">Co-orientador</p>
+            </div>
+          </div>
+          <p class="team-description">
+            Atua em eficiência energética em edificações, conforto ambiental e condicionamento natural. Sua pesquisa foca na avaliação e melhoria da eficiência energética, soluções para resfriamento evaporativo e consultoria para otimização de conforto térmico em ambientes construídos.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
